@@ -1,8 +1,5 @@
-import basics.Anagram
+import basics.isAnagram
 
 fun main() {
-
-    val anagram = Anagram("gian", "nig")
-
-    println(anagram.isAnagram())
+    println(isAnagram("hooh", "ohio"))
 }

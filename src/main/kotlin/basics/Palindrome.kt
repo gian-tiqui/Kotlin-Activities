@@ -1,6 +1,3 @@
 package basics
 
-class Palindrome(private var s: String) {
-
-    fun isPalindrome() = s.lowercase() == s.lowercase().reversed()
-}
+fun palindrome(s: String): Boolean = s.lowercase() == s.lowercase().reversed()

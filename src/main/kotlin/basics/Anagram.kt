@@ -1,24 +1,18 @@
 package basics
+fun strToMap(s: String): HashMap<Char, Int> {
+    val map = HashMap<Char, Int>()
 
-class Anagram(private var s: String, private var s2: String) {
-
-    private fun strToMap(s: String): HashMap<Char, Int> {
-        val map = HashMap<Char, Int>()
-
-        for (char in s.lowercase().toCharArray()) {
-            val count = map[char]
-            map[char] = count?.plus(1) ?: 1
-        }
-
-        return map
+    for (char in s.lowercase().toCharArray()) {
+        val count = map[char]
+        map[char] = count?.plus(1) ?: 1
     }
 
-    fun isAnagram():Boolean {
+    return map
+}
 
-        if (s.length != s2.length)
-            return false
+fun isAnagram(s: String, s2: String): Boolean {
+    if (s.length != s2.length)
+        return false
 
-        return strToMap(s) == strToMap(s2)
-    }
-
+    return strToMap(s) == strToMap(s2)
 }

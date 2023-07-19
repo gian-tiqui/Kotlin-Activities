@@ -1,12 +1,9 @@
 package basics
 
-class Calculator(private var n: Int, private var n2: Int) {
+fun add(n: Int, n2: Int) = n + n2
 
-    fun add() = n + n2
+fun subtract(n: Int, n2: Int) = n - n2
 
-    fun subtract() = n - n2
+fun multiply(n: Int, n2: Int) = n * n2
 
-    fun multiply() = n * n2
-
-    fun divide() = n / n2
-}
+fun divide(n: Int, n2: Int) = n / n2
