@@ -1,11 +1,10 @@
-import basics.isAnagram
-import java.util.Scanner
+import fundamentals.operations.Operation
+import fundamentals.variables.Datatypes
+
 
 fun main() {
-    val scanner = Scanner(System.`in`)
 
-    val s1 = scanner.next()
-    val s2 = scanner.next()
+    val operation = Operation()
 
-    println(isAnagram(s1, s2))
+    operation.run()
 }
